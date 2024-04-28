@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "2d208f68-6c15-4503-ab1e-45e1a8c3325c",
+		"name": "Author Post CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27529468"
+	},
+	"item": [
+		{
+			"name": "get all authors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/authors"
+			},
+			"response": []
+		},
+		{
+			"name": "add new author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"malek zaki\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/authors"
+			},
+			"response": []
+		},
+		{
+			"name": "read single author",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/authors/1"
+			},
+			"response": []
+		},
+		{
+			"name": "update single author",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"kamal ali\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/authors/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/authors/3"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/authors"
+			},
+			"response": []
+		},
+		{
+			"name": "add post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \" Post Title 3\",\r\n  \"content\": \" post content 3\",\r\n  \"author_id\":2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "get single post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/posts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "update single post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \" updated Post\",\r\n  \"content\": \"updated content\",\r\n  \"author_id\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/posts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "get all after update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get all after delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/posts"
+			},
+			"response": []
+		}
+	]
+}
